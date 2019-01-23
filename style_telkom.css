@@ -1,0 +1,582 @@
+div.menu{
+    width:100%;
+    background : red;
+}
+
+div.menu ul{
+    list-style-type:none; /*menghilangkan bullet pada list*/
+    overflow:hidden;
+     /* menghilangkan scrool bar*/
+     padding : 0; /* jarak antara border dengan konten(jarak dalam)*/
+     margin: 0;  /* jarak antara tipe elemen (jarak luar)*/
+}
+
+div.menu li{
+    float:right; /* posisi elemen daari kanan*/	
+}
+    
+div.menu li a{
+    text-decoration: none;   /*menghilangkan garis bawah pada link*/
+    color:#fff; /*warna font pada link*/
+    text-align :center;  /*posisi teks rata tengah*/
+    padding: 13px 15px;  /* 15 untuk top & button, 15 untuk left dan right*/
+    font-size :20px;
+    display : block;
+}
+
+div.menu li a:hover { /* ketika mouse meraba elemen berubah warna*/
+    background :#fff;
+    color: red;
+    border: 2px solid red; /*2px itu tbealnya, solid itu tipe garismya, red itu warna boardnya*/
+}
+
+div.menu img{
+    width :150px;
+    height:auto;
+    margin:5px;
+}
+
+div.header{
+     width :100%;
+     height:500px;
+     background-image: url("mokletfront.jpg");
+     background-repeat:no-repeat; /*biar gambarnya tidak berulang*/
+     background-size:cover; /*untuk mengatur ukuran background*/
+     background-position: center;
+     float:left;
+}
+
+div.bayangan{
+    width:100%;
+    height:500px;
+    background:#000;
+    opacity: 0.65;
+    float:left;
+}
+
+div.header h1{
+    position:absolute;
+    text-align: center;
+    color:#fff;
+    top: 150px;/*mengatur jarak dari  atas*/
+    left: 350px;/*mengatur jarak sebelah kiri*/
+    font-weight:bolder;
+    font-family:"Arial";
+    font-size:50px;
+}
+
+div.header h1 img{
+    width: 100px;
+    height:auto;
+}
+
+div.about{
+    width:100%;
+    height :400px;
+    padding :0;
+    float: left;
+    margin-top: 20px;
+}
+
+div.about .left{
+    width:50%;
+    height:100%;
+    float: left;
+}
+
+div.about .left h1{
+    text-align:right;
+    text-transform: uppercase; /*Huruf kapital*/
+    font-size: 60px;
+    font-family:"sans-serif";
+    font-weight:20;
+    border-right: 10px solid red;
+    padding-right: 10px;
+}
+
+div.about .left p{
+    text-align:right;
+    font-size:30px;
+    color: grey;
+}
+
+div.about .right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+div.about .right img{
+    width: 450px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 80px;
+    border:20px solid #000;
+    border-radius:20px; /*border melengkung*/
+}
+
+div.layanan{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    float: left;
+    padding: 30px;
+}
+div.layanan .box{
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin:20px;
+}
+
+div.layanan .bunder{
+    width: 100px;
+    height:100px;
+    border-radius:50%;
+    /* background:red;  */
+    margin: 0 auto;
+    display:flex; /*fleksibel*/
+}
+
+div.layanan .bunder span{
+    font-size: 30px;
+    color: #fff;
+    margin: auto;
+}
+
+
+div.layanan .box .deskripsi{
+    margin-top:10px;
+    font-size:20px;
+    text-align:center;
+    color:grey;
+}
+
+div.layanan .box h3{
+    text-align:center;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+.text-orangered{color: orangered; }
+.text-green{color: green; }
+.text-blue{color: blue; }
+.text-rgb{color: rgb(245, 14, 52); }
+
+.bg-orangered{background: orangered;}
+.bg-green{background: green;}
+.bg-blue{background: blue;}
+.bg-rgb{background: rgb(245, 14, 52);}
+
+div.penghargaan{
+    width: 100%;
+    height:450px;
+    background: url("aaa.jpg") no-repeat top;
+    background-size:cover;
+    float:left;
+    margin-top:50px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+div.penghargaan .gelap{
+    width:100%;
+    height:100%;
+    background:linear-gradient(to right, #000, #000, transparent);
+    float:left;
+    opacity: 0.65;
+}
+
+div.penghargaan .left{
+    width:50%;
+    text-align:right;
+    border-right:5px solid red;
+    position: absolute;
+    margin-top:150px;
+
+}
+
+div.penghargaan .left h1{
+    margin :2px;
+    font-size:40px;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    color:#fff;
+}
+div.penghargaan .left h2{
+    margin :2px;
+    font-size:30px;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    color:#fff;
+}
+div.penghargaan .left h3{
+    margin :2px;
+    font-size:25px;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+div.penghargaan .right{
+    position: absolute;
+    left: 700px;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    margin-top: 150px;
+    float: left;
+}
+
+div.penghargaan .right img{
+    width: 100px;
+    height :auto;
+}
+
+div.studi{
+    width: 100%;
+    height: 200px;
+    float: left;
+    position: flex;
+    margin-top:100px;
+}
+
+div.studi .bunder{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius:50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.studi .bunder span{
+    font-size:60px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+div.studi h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color:#000;
+}
+
+
+div.studi p{
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.prodi{
+    width: 100%;
+    height: 500px;
+    float: left;
+    background: linear-gradient(#fff 250px, red 250px);
+    margin-top: 70px;b
+}
+
+div.prodi .jurusan{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+div.prodi .jurusan h3{
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    margin:2px;
+}
+
+
+div.prodi .jurusan p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.prestasi{
+    width: 100%;
+    height: 500px;
+    float: left;
+    background : linear-gradient(white 400px, red 100px);
+}
+
+div.prestasi .left{
+    width: 40%;
+    height:auto;
+    float: left;
+}
+
+div.prestasi .left h1{
+    margin-left: 20px;
+    color:black;
+    font-size:60px;
+    border-left:5px solid red;
+    padding-left: 10px; 
+    text-transform: uppercasse;
+}
+
+div.prestasi .left p{
+    margin-left: 20px;
+    color: grey;
+    font-size:20px;
+}
+
+
+div.prestasi .right{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+
+
+div.prestasi .right img{
+    width: 500px;
+    height: auto;
+    border:15px solid grey;
+    margin-top: 100px;
+    margin-left:100px;
+    border-radius: 20px;
+    border-style: inset;
+}
+
+div.prestasi .footer{
+    position: relative;
+    left: 30px;
+    bottom: 70px;
+}
+
+div.prestasi .footer h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+div.info{
+width: 100%;
+height: 300px;
+float: left;
+margin-top:50px;
+}
+
+div.info .bunder{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.info .bunder span{
+    margin: auto;
+    font-size: 40px;
+    color: #fff;
+}
+ div.info h1{
+     font-size: 40px;
+     color: black;
+     font-family: sans-serif;
+     margin:10px;
+     text-align: center;
+ }
+
+div.info p{
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.update{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background: red;
+    position: relative;
+    
+}
+
+div.update .centang{
+    width: 100px;
+    height: 100px;
+    border-radius:50px;
+    background: red;
+    display: flex;
+    position: absolute;
+    left:40px;
+    top:-50px;
+}
+
+
+div.update .centang span{
+    color: #fff;
+    margin:auto;
+    font-size:30px;
+}
+
+div.update .left{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+
+div.update .left h1{
+    margin-top:60px;
+    margin-left:40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+
+}
+
+div.update .left p{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 40px;
+}
+div.update .right{
+    width:50%;
+    height: auto;
+    float: left;
+    margin-top:60px;
+}
+div.update .right .bunder{
+    width: 100px;
+    height:100px;
+    background:#fff;
+    border-radius: 50%;
+    margin: 20px;
+    display: flex;
+    float: left;
+
+}
+
+div.update .right .bunder span{
+    font-size: 40px;
+    color: red;
+    margin: auto;
+
+}
+
+div.partner{
+    width: 100%;
+    height:auto;
+    float: left;
+    margin-top:50px;
+    text-align:center;
+    }
+    
+    div.partner .bunder{
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    div.partner .bunder span{
+        margin: auto;
+        font-size: 40px;
+        color: #fff;
+    }
+     div.partner h1{
+         font-size: 40px;
+         color: black;
+         font-family: sans-serif;
+         margin:10px;
+         text-align: center;
+     }
+    
+    div.partner p{
+        color: grey;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom :10px;
+    }
+
+    div.partner img{
+        margin-top:5px;
+        width: 10%;
+        height: auto;
+        float: center;
+        margin-left:70px;
+        margin-bottom:50px;
+    }
+
+    div.foo{
+        width:100%;
+        height: auto;
+        float: left;
+        background: #111;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top:60x;
+        
+    }
+
+    div.foo .col{
+        width: 25%;
+        height: auto;
+        color:#fff;
+        padding: 10px;
+        float: left;
+        box-sizing: border-box;
+        padding-left:35px;
+    }
+    div.foo .col p{
+        color:grey;
+        text-align: left;
+    }
+    div.foo .col .fab{
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    div.foo .col span{
+        color :white;
+    }
+   div.foo .col h4{
+       color: grey;
+
+   }
+   div.foo .col h3{
+    color:white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 7;
+
+}
+
+div.copy{
+    width: 100%;
+    height: 60px;
+    background: black;
+    float: left;
+
+}
+
+div.copy .left h3{
+    font-size : 15px;
+    color:grey;
+    text-align:left;
+    padding: 14px;
+    padding-left: 30px;
+}
+ div.body .right h4{
+     float: right;
+     color:grey;
+     text-align:right;
+     margin-right:150px;
+     margin-bottom: 25px;
+ }
+ 
